@@ -24,4 +24,6 @@ public class FlightManager {
     public int passengersBaggageWeightRemainInTotal() {
         return totalBaggageLimit() - passengersBaggageWeightInTotal();
     }
+
+
 }
