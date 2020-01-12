@@ -14,8 +14,6 @@ public class FlightTest {
     Flight flight1;
     Flight flight2;
 
-    ArrayList passengers;
-
     @Before
     public void before(){
         passenger1 = new Passenger("Sophia",2);

@@ -15,4 +15,8 @@ public class Passenger {
     public int getBag() {
         return this.bag;
     }
+
+    public int getBagWeight() {
+        return this.bag * 20;
+    }
 }

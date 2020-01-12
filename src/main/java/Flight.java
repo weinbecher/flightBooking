@@ -33,6 +33,10 @@ public class Flight {
        return this.plane.getPlaneTypeCapacity();
     }
 
+    public int countWeight(){
+        return this.plane.getPlaneTypeTotalWeight();
+    }
+
     public int availableSeat() {
         int seats = countSeats();
         int passengerNumber = countPassengers();
@@ -46,5 +50,13 @@ public class Flight {
         } else {
             return false;
         }
+    }
+
+    public int PassengersBagWeight() {
+        int passengersBagWeight = 0;
+        for(Passenger passenger : passengers) {
+            passengersBagWeight += passenger.getBagWeight();
+        }
+        return passengersBagWeight;
     }
 }

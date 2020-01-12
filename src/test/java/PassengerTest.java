@@ -21,4 +21,13 @@ public class PassengerTest {
         assertEquals(0,passenger3.getBag());
 
     }
+
+    @Test
+    public void passengerHasBagWeight(){
+        assertEquals(40,passenger1.getBagWeight());
+
+    }
+
+
+
 }
