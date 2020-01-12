@@ -17,4 +17,19 @@ public class Flight {
         this.departureAirport = departureAirport;
         this.departureTime = departureTime;
     }
+
+    public int countPassengers() {
+        return this.passengers.size();
+    }
+
+
+    public ArrayList<Passenger> addPassenger(Passenger passenger) {
+        this.passengers.add(passenger);
+        return passengers;
+    }
+
+
+    public int countSeats() {
+       return this.plane.getPlaneTypeCapacity();
+    }
 }
