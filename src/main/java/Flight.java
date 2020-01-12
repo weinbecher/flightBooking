@@ -32,4 +32,19 @@ public class Flight {
     public int countSeats() {
        return this.plane.getPlaneTypeCapacity();
     }
+
+    public int availableSeat() {
+        int seats = countSeats();
+        int passengerNumber = countPassengers();
+        return seats - passengerNumber;
+    }
+
+    public boolean bookPassenger(Passenger passenger) {
+        if(availableSeat() > 0){
+            addPassenger(passenger);
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
